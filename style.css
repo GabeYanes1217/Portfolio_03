@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #ACE1AF;
+    --secondary-color: #C9C6E5;
+    --background-color: #121313;
+    --background-color2: rgba(17, 17, 17, 0.7);
+    --text-color: #C6C6C6;
+    --card-background: #B0EBB4;
+    --shadow-icons: 0px 2px 15px 2px rgba(255, 255, 255, 0.27);
+    ;
+    --font-family: 'Roboto Slab';
+    --card-border-color: #363636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: 1%;
+    scrollbar-color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.item1 {
+    position: absolute;
+    top: 7.9%;
+    right: 2%;
+}
+
+.item2 {
+    position: absolute;
+    top: 18%;
+    left: 9%;
+}
+
+.item3 {
+    position: absolute;
+    top: 59.8%;
+    right: 16.5%;
+}
+
+.item4 {
+    position: absolute;
+    top: 66.7%;
+    left: 5.5%;
+}
+
+.item5 {
+    position: absolute;
+    right: 50%;
+}
+
+.item6 {
+    position: relative;
+    right: 28%;
+    top: -27%;
+}
+
+.item8 {
+    left: 42%;
+    bottom: 11%;
+    position: relative;
+}
+
+.item7 {
+    position: relative;
+    left: 196%;
+    bottom: 6%;
+}
+
+.item5,
+.item6,
+.item7,
+.item8,
+.item1,
+.item2,
+.item3,
+.item4 img {
+    opacity: 0.3;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-shadow: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    text-shadow: 4px 4px 0px rgba(199, 198, 230, 0.3);
+}
+
+h2 {
+    font-size: 60px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 42px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+.tooltip,
+h4 {
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+h5 {
+    font-size: 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: justify;
+    letter-spacing: 0.005em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+header {
+    background-color: var(--background-color2);
+    border-radius: 10px;
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    width: 60%;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 2.5%;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.icons {
+    position: relative;
+    background: none;
+    padding: 4px;
+    stroke: var(--text-color);
+    box-shadow: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.icons:hover {
+    background: var(--text-color);
+    stroke: var(--background-color);
+    box-shadow: 0px 2px 15px 2px rgba(255, 255, 255, 0.163);
+    transform: scale(1.1);
+}
+
+section {
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 100%;
+    align-content: center;
+    gap: 12px;
+}
+
+.layout01 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.icons2 {
+    width: fit-content;
+}
+
+.icons2 a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    gap: 8px;
+}
+
+.icons2 svg {
+    width: 28px;
+    height: 28px;
+}
+
+.icons2:hover a {
+    transform: translateY(20px);
+    opacity: 0.5;
+}
+
+strong {
+    text-decoration-line: underline;
+}
+
+.layout02 {
+    width: 27.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.profile {
+    width: 300px;
+    border-radius: 25%;
+    filter: grayscale(1);
+    transition: all 0.3s ease-out;
+}
+
+.profile:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    box-shadow: 0px 0px 14px 12px rgba(199, 198, 230, 0.4);
+}
+
+.sec2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.bnt1 {
+    width: fit-content;
+    padding: 8px 40px;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid var(--text-color);
+    box-shadow: none;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all 0.3s ease-out;
+}
+
+.bnt1:hover {
+    background: var(--secondary-color);
+    box-shadow: 0px 8px 20px rgba(201, 198, 229, 0.45);
+    color: var(--background-color);
+    transform: translateY(-8px);
+}
+
+.sec3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+.cards {
+    display: flex;
+    width: fit-content;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 8px rgba(199, 198, 230, 0.3);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .skill-box {
+    width: 100%;
+    height: fit-content;
+    margin-top: 12px;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+    background: rgba(222, 222, 222, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 60%;
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.skill-per.css {
+    width: 40%;
+}
+
+.skill-per.javascript {
+    width: 15%;
+}
+
+.skill-per.csharp {
+    width: 15%;
+}
+
+.skill-per.python {
+    width: 20%;
+}
+
+.skill-per.sql {
+    width: 30%;
+}
+
+.skill-per.figma {
+    width: 80%;
+}
+
+.skill-per.illustrator {
+    width: 20%;
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -18px;
+    top: -24px;
+}
+
+.conteudo {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.card.active .conteudo {
+    padding: 4px;
+    max-height: 300px;
+    opacity: 1;
+}
+
+.icon3 {
+    width: 32px;
+    height: 32px;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-out;
+}
+
+.card.active .icon3 {
+    transform: rotate(180deg);
+}
+
+.sec4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout03 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.projetos {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projetos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+.projetos div a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.repbox {
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+}
+
+.repbox:hover {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 8px 20px rgba(201, 198, 229, 0.45);
+}
+
+.repbox a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.repbox span {
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: justify;
+    letter-spacing: 0.005em;
+}
+
+.content {
+    content: url(assets/code\(1\).svg);
+    padding: 2px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+.swiper {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border-color);
+    box-shadow: none;
+    margin: 0px;
+    transition: all 0.3s ease-out;
+}
+
+.swiper:hover {
+    background: var(--secondary-color);
+    box-shadow: 0px 8px 20px rgba(201, 198, 229, 0.45);
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.swiper-slide a img {
+    width: 100%;
+}
+
+.sec5 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.layout04 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.sec6 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    align-content: baseline;
+}
+
+.layout05 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+}
+
+form {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 12px;
+}
+
+.boxform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+textarea,
+input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--card-border-color);
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--background-color);
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+textarea:hover,
+input:hover {
+    box-shadow: 0px 8px 20px rgba(201, 198, 229, 0.45);
+}
+
+input {
+    padding: 12px 4px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    padding: 0px 4px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    header {
+        width: 100%;
+        padding: 12px;
+    }
+
+    section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .layout01 {
+        text-align: center;
+    }
+
+    .sec2 {
+        flex-direction: column;
+        gap: 1%;
+    }
+
+    .profile {
+        display: none;
+    }
+
+
+    .layout02 {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec3 {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .skill-per .tooltip {
+        right: -40px;
+    }
+
+    .sec4 {
+        flex-direction: column;
+    }
+
+    .layout03 {
+        width: 90%;
+        align-items: center;
+    }
+
+    .projetos {
+        display: none;
+    }
+
+    .layout04 {
+        width: 90%;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 400px;
+        height: 200px;
+    }
+
+    .sec6 {
+        gap: 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .item5,
+    .item6,
+    .item7,
+    .item8 {
+        display: none;
+    }
+
+    .layout05 {
+        width: 90%;
+        align-items: center;
+    }
+
+    form{
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    h3{
+        font-size: 28px;
+    }
+
+    .tooltip{
+        display: none;
+    }
+
+    .swiper{
+        width: 200px;
+        height: 100px;
+    }
+
+    textarea,
+    input{
+        width: 80%;
+    }
+
+    form{
+        margin-top: 1.4rem;
+        width: 90%;
+    }
+
+    .boxform{
+        align-items: center;
+    }
+}
